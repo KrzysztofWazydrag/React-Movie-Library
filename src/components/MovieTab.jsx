@@ -1,26 +1,25 @@
 import styled from 'styled-components'
 
-export const StyledMovieTab = ({ video }) => {
+export const MovieTab = ({ video }) => {
+  const handleClick = () => alert('Kliknieto w film!');
+
   return (
-    <div>
-      <Thumbnail video={video} />
+    <StyledMovieTab onClick={handleClick}>
       <a href={video.url}>
-        <h3>{video.title}</h3>
+        <h2>{video.title}</h2>
         <p>{video.description}</p>
+        <p>{video.url}</p>
       </a>
-      <LikeButton video={video} />
-    </div>
+    </StyledMovieTab>
   )
 }
 
-const Thumbnail = styled.div`
-background-color: grey;
-justify-content: center;
-color: red;
-`
 
-const LikeButton = styled.button`
-background-color: blue;
-color: white;
-justify-content: center;
-`
+const StyledMovieTab = styled.div`
+  padding: 20px;
+  background-color: rgb(241, 241, 241);
+  color: black;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+`;

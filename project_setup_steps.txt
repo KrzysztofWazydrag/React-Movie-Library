@@ -1,0 +1,61 @@
+1. Download Node.js LTS or check Version
+2. npm create vite@latest
+    - project name: Projekt_1.2.3
+    - select framework: React
+3. go into project directory cd .\Projekt_1.2.3
+4. npm install ------>  downloads all dependencies (adds node_modules folder)
+
+
+
+5.  App.jsx
+👉 Jest głównym komponentem aplikacji React.
+To tutaj zazwyczaj umieszcza się strukturę i logikę aplikacji – komponenty, stan, obsługę zdarzeń, itd.
+✅ Przykładowa zawartość App.jsx w projekcie Vite:
+
+function App() {
+  return (
+    <div>
+      <h1>Hello, Vite + React!</h1>
+    </div>
+  );
+}
+
+export default App;
+
+🔎 Co tu się dzieje?
+App to komponent funkcyjny React.
+Zwraca (return) JSX – składnię umożliwiającą pisanie HTML w JavaScript.
+export default App; – umożliwia import tego komponentu w innych plikach.
+
+📂 6. main.jsx
+👉 Jest punktem wejścia do aplikacji (entry point).
+Tutaj React renderuje główny komponent (App.jsx) do drzewa DOM przeglądarki.
+✅ Przykładowa zawartość main.jsx w Vite:
+
+// main.jsx
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App.jsx';
+import './index.css';
+
+// Tworzy root i renderuje główny komponent App
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+🔎 Co tu się dzieje?
+Importy:
+React i ReactDOM – potrzebne do pracy z Reactem.
+App – główny komponent aplikacji.
+index.css – stylowanie aplikacji.
+ReactDOM.createRoot():
+Pobiera element HTML o id="root" (znajdujący się w index.html).
+Renderuje aplikację React w przeglądarce.
+<React.StrictMode>:
+Włącza dodatkowe sprawdzenia i ostrzeżenia w trybie deweloperskim (nie pojawia się w produkcji).
+
+📌 Podsumowanie:
+App.jsx – główny komponent, w którym tworzysz interfejs.
+main.jsx – punkt startowy, który renderuje aplikację w DOM. 
