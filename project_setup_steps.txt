@@ -59,3 +59,6 @@ Włącza dodatkowe sprawdzenia i ostrzeżenia w trybie deweloperskim (nie pojawi
 📌 Podsumowanie:
 App.jsx – główny komponent, w którym tworzysz interfejs.
 main.jsx – punkt startowy, który renderuje aplikację w DOM. 
+
+
+nowy commit
