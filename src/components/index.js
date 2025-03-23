@@ -1,1 +1,1 @@
-export {StyledMovieTab} from './MovieTab.jsx'
+export {MovieCard} from './MovieCard.jsx'
