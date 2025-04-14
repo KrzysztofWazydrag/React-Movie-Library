@@ -1,4 +1,4 @@
-React-Movie-Library
+# React-Movie-Library
 A simple movie library app built with React and Vite.
 It allows users to:
 
@@ -8,7 +8,7 @@ Add and remove favorite movies
 
 View a list of favorite movies
 
-Features
+# Features
 🔍 Search movies by title
 
 ❤️ Add/remove movies to/from favorites
