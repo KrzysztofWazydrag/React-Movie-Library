@@ -17,31 +17,22 @@ View a list of favorite movies
 
 ⚡ Fast and lightweight (Vite + React)
 
-Setup
-Clone the repository:
+# Setup
+- Clone the repository:
 
-bash
-Copy
-Edit
-git clone https://github.com/your-username/react-movie-library.git
+```js
+git clone https://github.com/krzysztofwazydrag/react-movie-library.git
 cd react-movie-library
-Install dependencies:
 
-bash
-Copy
-Edit
+- Install dependencies:
 npm install
-Create a .env file with your TMDB API key:
 
-ini
-Copy
-Edit
+- Create a .env file with your TMDB API key:
 VITE_TMDB_API_KEY=your_api_key_here
-Start the development server:
 
-bash
-Copy
-Edit
+- Start the development server:
 npm run dev
-License
+```
+
+# License
 MIT
