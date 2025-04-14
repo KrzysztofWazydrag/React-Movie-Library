@@ -1,13 +1,47 @@
-# React + Vite
+React-Movie-Library
+A simple movie library app built with React and Vite.
+It allows users to:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Search movies by name using the TMDB API
 
-Currently, two official plugins are available:
+Add and remove favorite movies
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+View a list of favorite movies
 
-## Expanding the ESLint configuration
+Features
+🔍 Search movies by title
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# React-Movie-Library
+❤️ Add/remove movies to/from favorites
+
+🌐 Powered by The Movie Database (TMDB) API
+
+⚡ Fast and lightweight (Vite + React)
+
+Setup
+Clone the repository:
+
+bash
+Copy
+Edit
+git clone https://github.com/your-username/react-movie-library.git
+cd react-movie-library
+Install dependencies:
+
+bash
+Copy
+Edit
+npm install
+Create a .env file with your TMDB API key:
+
+ini
+Copy
+Edit
+VITE_TMDB_API_KEY=your_api_key_here
+Start the development server:
+
+bash
+Copy
+Edit
+npm run dev
+License
+MIT
