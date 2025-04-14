@@ -11,7 +11,10 @@
     font-size: 1.5rem;
     font-weight: bold;
   }
-  
+  .navbar-brand a:hover {
+    opacity: 0.8;
+  }
+
   .navbar-links {
     display: flex;
     gap: 2rem;
@@ -26,6 +29,12 @@
   
   .nav-link:hover {
     background-color: rgba(255, 255, 255, 0.1);
+  }
+  .app-logo {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    display: inline-block;
   }
   
   @media (max-width: 768px) {
@@ -43,5 +52,10 @@
   
     .nav-link {
       padding: 0.5rem;
+    }
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
     }
   }
