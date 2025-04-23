@@ -1,0 +1,14 @@
+image: mcr.microsoft.com/playwright:v1.52.0-noble
+
+pipelines:
+  default:
+    - step:
+        name: Run Playwright Tests
+        caches:
+          - node
+        script:
+          - npm ci
+          - npx playwright install --with-deps
+          - npm run test
+        artifacts:
+          - playwright-report/**

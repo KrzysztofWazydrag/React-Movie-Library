@@ -1,5 +1,6 @@
 import '../css/MovieCard.css';
 import { useMovieContext } from '../contexts/MovieContext';
+import { FAVORITE_MOVIE_BUTTON } from '/tests/TestIds.ts';
 
 function MovieCard({ movie }) {
     const { isFavorite, addToFavorites, removeFromFavorites } = useMovieContext()
@@ -15,7 +16,7 @@ function MovieCard({ movie }) {
       <div className="movie-poster">
         <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />
         <div class name="movie-overlay">
-          <button className={`favorite-btn ${favorite ? "active" : "" }`} onClick={onFavoriteClick}>
+          <button data-test-id={FAVORITE_MOVIE_BUTTON} className={`favorite-btn ${favorite ? "active" : "" }`} onClick={onFavoriteClick}>
             ♥
           </button>
         </div>

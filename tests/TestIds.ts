@@ -1,0 +1,1 @@
+export const FAVORITE_MOVIE_BUTTON = "favorite-movie-button";
