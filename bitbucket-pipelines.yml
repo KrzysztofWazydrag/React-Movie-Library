@@ -3,7 +3,7 @@ image: mcr.microsoft.com/playwright:v1.52.0-noble
 pipelines:
   default:
     - step:
-        name: Run Playwright Tests
+        name: Run tests on main branch Push
         caches:
           - node
         script:
@@ -12,3 +12,19 @@ pipelines:
           - npm run test
         artifacts:
           - playwright-report/**
+  pull-requests:
+    '**':
+      - step:
+          name: Run tests on Pull Request to main
+          condition:
+            changesets:
+              includePaths:
+                - '**'
+          caches:
+            - node
+          script:
+            - npm ci
+            - npx playwright install --with-deps
+            - npm run test
+          artifacts:
+            - playwright-report/**
